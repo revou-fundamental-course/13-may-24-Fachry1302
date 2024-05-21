@@ -51,5 +51,23 @@ button {
     border-color: #14141f;
 }
 
+img {
+    width: 150px;
+}
 
+.align-left {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.formula {
+    text-align: center;
+    width: auto;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 0%;
+    border-radius: 15px;
+}
 
