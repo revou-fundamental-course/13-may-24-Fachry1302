@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- header -->
-    <div>
+    <div class="container">
+         <!-- header -->
         <header>
             <h1 class="welcome">
                 Welcome to Katik
@@ -18,67 +18,69 @@
                 <p> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
             </section>
         </header>
-    </div>
-
-    <!-- section -->
-    <section>
+        
+    
+        <!-- section -->
         <section>
-            <div>
-                <h2 class="section-content">Segitiga</h2>
-                <button type="button" class="switch">Switch to Keliling segitiga   </button>
-            </div>
-        </section>
-
-        <section>
-            <section class="container">
+            <section>
                 <div>
-                    <h1 class="section-content" id="title-content">Luas Segitiga</h1>
+                    <h2 class="section-content">Segitiga</h2>
+                    <button type="button" class="switch">Switch to Keliling segitiga   </button>
                 </div>
-
-                <div>
-                    <img src="assets/segitita-luas.png" alt="Bangun datar segitiga">
-                </div>
-
-               <article>
-                    <div>
-                        <p class="align-left">Rumus Luas Segitiga yaitu:</p>
-                        <h2 class="formula">L = 1/2 x a x t</h2>
-                        <p class="align-left">Di mana:</p>
-                        <p class="align-left">L = Luas</p>
-                        <p class="align-left">a = Panjang Alas</p>
-                        <p class="align-left">t = Tinggi</p>
-                    </div>
-               </article>
-
-                <br><hr>
-               
-                <form id="luas-segitiga">
-                    <h1>Hitung Luas Segitiga</h1>
-
-                    <div id="input-group">
-                        <label for="alas">Alas</label>
-                        <input type="number" id="alas" placeholder="Masukkan Panjang Alas Segitiga"> <br>
-                    </div>
-
-                    <div id="input-group">
-                        <label for="tinggi">Tinggi</label>
-                        <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga">
-                    </div>
-
-                    <br>
-
-                    <article>
-                        <div id="result"></div>
-                    </article>
-
-                    <button type="submit" id="submit">Hitung</button>
-                    
-                </form>
             </section>
-
-
+            <br>
+            <section>
+                <section class="container1">
+                    <div>
+                        <h1 class="section-content" id="title-content">Luas Segitiga</h1>
+                    </div>
+    
+                    <div>
+                        <img src="assets/segitita-luas.png" alt="Bangun datar segitiga">
+                    </div>
+    
+                   <article>
+                        <div>
+                            <p class="align-left">Rumus Luas Segitiga yaitu:</p>
+                            <h2 class="formula">L = 1/2 x a x t</h2>
+                            <p class="align-left">Di mana:</p>
+                            <p class="align-left">L = Luas</p>
+                            <p class="align-left">a = Panjang Alas</p>
+                            <p class="align-left">t = Tinggi</p>
+                        </div>
+                   </article>
+    
+                    <br><hr>
+                   
+                    <form id="luas-segitiga">
+                        <h1>Hitung Luas Segitiga</h1>
+    
+                        <div id="input-group">
+                            <label for="alas">Alas</label>
+                            <input type="number" id="alas" placeholder="Masukkan Panjang Alas Segitiga"> <br>
+                        </div>
+    
+                        <div id="input-group">
+                            <label for="tinggi">Tinggi</label>
+                            <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga">
+                        </div>
+    
+                        <br>
+    
+                        <article>
+                            <div id="result"></div>
+                        </article>
+    
+                        <button type="submit" id="submit">Hitung</button>
+                        
+                    </form>
+                    <br><br>
+                </section>
+                <br><br><br>
+    
+            </section>
         </section>
-    </section>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
