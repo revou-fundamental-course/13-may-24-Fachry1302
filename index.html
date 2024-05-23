@@ -25,12 +25,12 @@
             <section>
                 <div>
                     <h2 class="section-content">Segitiga</h2>
-                    <button type="button" class="switch">Switch to Keliling segitiga   </button>
+                    <button type="button" class="switch"><a href="#keliling" style="text-decoration: none;">Switch to Keliling segitiga</a></button>
                 </div>
             </section>
             <br>
             <section>
-                <section class="container1">
+                <section class="container1" id="luas">
                     <div>
                         <h1 class="section-content" id="title-content">Luas Segitiga</h1>
                     </div>
@@ -57,12 +57,12 @@
     
                         <div id="input-group">
                             <label for="alas">Alas</label>
-                            <input type="number" id="alas" placeholder="Masukkan Panjang Alas Segitiga"> <br>
+                            <input type="number" id="alas" placeholder="Masukkan Panjang Alas Segitiga" required> <br>
                         </div>
     
                         <div id="input-group">
                             <label for="tinggi">Tinggi</label>
-                            <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga">
+                            <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga" required>
                         </div>
     
                         <br>
@@ -71,7 +71,10 @@
                             <div id="result"></div>
                         </article>
     
-                        <button type="submit" id="submit">Hitung</button>
+                        <div class="button-container">
+                            <button type="submit" class="submit" id="submit">Hitung</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
                         
                     </form>
                     <br><br>
@@ -82,7 +85,7 @@
 
             <br>
             <section>
-                <section class="container1">
+                <section class="container1" id="keliling">
                     <div>
                         <h1 class="section-content" id="title-content">Keliling Segitiga</h1>
                     </div>
@@ -98,33 +101,41 @@
                             <p class="align-left">Di mana:</p>
                             <p class="align-left">K = Keliling</p>
                             <p class="align-left">S1 = Sisi a</p>
-                            <p class="align-left">S2 = Sisi a</p>
-                            <p class="align-left">S3 = Sisi a</p>
+                            <p class="align-left">S2 = Sisi b</p>
+                            <p class="align-left">S3 = Sisi c</p>
                         </div>
                    </article>
     
                     <br><hr>
                    
-                    <form id="luas-segitiga">
-                        <h1>Hitung Luas Segitiga</h1>
+                    <form id="keliling-segitiga">
+                        <h1>Hitung Keliling Segitiga</h1>
     
                         <div id="input-group">
-                            <label for="alas">Alas</label>
-                            <input type="number" id="alas" placeholder="Masukkan Panjang Alas Segitiga"> <br>
+                            <label for="sisia">Sisi a</label>
+                            <input type="number" id="sisia" placeholder="Masukkan Panjang Sisi a" required> <br>
                         </div>
     
                         <div id="input-group">
-                            <label for="tinggi">Tinggi</label>
-                            <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga">
+                            <label for="sisib">Sisi b</label>
+                            <input type="number" id="sisib" placeholder="Masukkan Panjang Sisi b" required>
+                        </div>
+
+                        <div id="input-group">
+                            <label for="sisic">Sisi c</label>
+                            <input type="number" id="sisic" placeholder="Masukkan Panjang Sisi c" required>
                         </div>
     
                         <br>
     
                         <article>
-                            <div id="result"></div>
+                            <div id="hasil"></div>
                         </article>
     
-                        <button type="submit" id="hitung">Hitung</button>
+                        <div class="button-container">
+                            <button type="submit" class="submit" id="hitung">Hitung</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
                         
                     </form>
                     <br><br>
